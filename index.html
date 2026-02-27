@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Elite Student Brain</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🧠 Elite Student Brain</h1>
+
+<textarea id="inputText" placeholder="Paste school notes, homework, or study data here..."></textarea>
+
+<br>
+
+<input id="customCategory" placeholder="Custom category if AI is unsure">
+
+<br>
+
+<button onclick="sortData()">✨ Sort Study Data</button>
+<button onclick="undoAction()">↩ Undo</button>
+<button onclick="clearAll()">🧹 Delete All Data</button>
+
+<h2>🔍 Search</h2>
+<input id="searchBar" placeholder="Search notes..." oninput="searchData()">
+
+<div id="output"></div>
+
+<div id="stats"></div>
+
+</div>
+
+<script src="brain.js"></script>
+
+</body>
+</html>
